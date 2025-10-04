@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新生的喜悦</title>
+</head>
+<body>
+    <img
+        src="{{ url_for('static', filename='logo.png') }}"
+        alt="鸢尾花logo"
+        height="75"
+        align="absmiddle"
+    >
+    <h1 style="display: inline;">采薇_工具箱</h1>  <!-- display: inline 让标题不独占一行，和图片并排 -->
+
+    <br><br>  <!-- 加两个换行，和下面的链接拉开距离 -->
+
+<a href="{{url_for('zheng_zb')}}">坐标正算</a>
+<br>
+<a href="{{url_for('fan_zb')}}">坐标反算</a>
+    <br><br>
+<footer>
+    <p><i>现版本：{{version[0]}}</i></p>
+    <p><i>更新内容：{{version[1]}}</i></p>
+</footer>
+</body>
+</html>

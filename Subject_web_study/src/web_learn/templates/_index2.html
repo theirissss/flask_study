@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+hello world
+<br>
+{{data}}<br>
+{{data.name}}
+{{data['name']}}<br>
+{{list.0}}
+{{张三.1}}
+<!--可以索引也可以dot-->
+<br>
+是的，甚至可以计算：{{张三.0+张三.1}}
+<br>
+<!--{{hello | upper}} hello是变量不是字符串，所以无法大写-->
+{{'hello' | upper}}
+<br>
+<!--success-->
+<!--总而言之，过滤器就是函数，相当于'hello'.upper()-->
+{{'hello' | replace('e','o') | upper | title}}
+</body>
+</html>

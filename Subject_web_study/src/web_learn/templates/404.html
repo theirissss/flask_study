@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="{{ url_for('static', filename='picture404.png') }}" alt="" width="873px" height="626px">
+<!--{# 没有高宽 0*0 #}-->
+<!--好吧，只有高宽也不行，要放在静态文件当中-->
+<!--{{ url_for('static', filename='_picture404.png') }}绝对正确-->
+</body>
+</html>
